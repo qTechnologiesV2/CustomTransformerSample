@@ -3,7 +3,6 @@ package de.brownie.customtransformer;
 import dev.mdma.qprotect.api.jar.JarFile;
 import dev.mdma.qprotect.api.transformer.ClassTransformer;
 import dev.mdma.qprotect.api.transformer.TransformException;
-import dev.mdma.qprotect.api.transformer.exclusions.ExclusionType;
 import org.objectweb.asm.Opcodes;
 import org.objectweb.asm.tree.ClassNode;
 import org.objectweb.asm.tree.InsnNode;
@@ -29,10 +28,5 @@ public class NopSpamTransformer extends ClassTransformer {
 
         //return true if class was modified
         return true;
-    }
-
-    @Override
-    public ExclusionType getExclusionType() {
-        return ExclusionType.CUSTOM;
     }
 }

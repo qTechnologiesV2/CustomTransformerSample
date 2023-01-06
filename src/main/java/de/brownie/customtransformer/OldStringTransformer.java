@@ -3,7 +3,6 @@ package de.brownie.customtransformer;
 import dev.mdma.qprotect.api.jar.JarFile;
 import dev.mdma.qprotect.api.transformer.ClassTransformer;
 import dev.mdma.qprotect.api.transformer.TransformException;
-import dev.mdma.qprotect.api.transformer.exclusions.ExclusionType;
 import org.objectweb.asm.Label;
 import org.objectweb.asm.Opcodes;
 import org.objectweb.asm.tree.ClassNode;
@@ -20,7 +19,7 @@ public class OldStringTransformer extends ClassTransformer {
     }
 
     @Override
-    public boolean runOnClass(String s, ClassNode classNode, JarFile jarFile) throws TransformException {
+    public boolean runOnClass(String s, ClassNode classNode, JarFile jarFile)  {
         classNode.methods.forEach(methodNode ->
                 methodNode.instructions.forEach(abstractInsnNode -> {
                     Object cst;
@@ -428,10 +427,5 @@ public class OldStringTransformer extends ClassTransformer {
         mv.visitEnd();
         return mv;
 
-    }
-
-    @Override
-    public ExclusionType getExclusionType() {
-        return ExclusionType.CUSTOM;
     }
 }
