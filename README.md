@@ -16,7 +16,7 @@ Sample to use with qProtect's custom transformer system
 <dependency>
     <groupId>com.github.qTechnologiesV2</groupId>
     <artifactId>qProtect-API</artifactId>
-    <version>1.9.2</version>
+    <version>1.9.4</version>
 </dependency>
 ```
 2. Create a new Class that extends ClassTransformer and implement the methods from the superClass
