@@ -20,13 +20,17 @@
             <id>jitpack.io</id>
             <url>https://jitpack.io</url>
         </repository>
+        <repository>
+            <id>mdma</id>
+            <url>https://nexus.mdma.dev/repository/maven-releases/</url>
+        </repository>
     </repositories>
 
     <dependencies>
         <dependency>
-            <groupId>com.github.qTechnologiesV2</groupId>
-            <artifactId>qProtect-API</artifactId>
-            <version>1.9.4</version>
+            <groupId>dev.mdma.qprotect</groupId>
+            <artifactId>qprotect-api</artifactId>
+            <version>1.10.1</version>
         </dependency>
         <dependency>
             <groupId>org.ow2.asm</groupId>
