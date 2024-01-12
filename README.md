@@ -8,15 +8,16 @@ Sample to use with qProtect's custom transformer system
 ```xml
 <repositories>
     <repository>
-        <id>jitpack.io</id>
-        <url>https://jitpack.io</url>
+        <id>mdma</id>
+        <url>https://nexus.mdma.dev/repository/maven-releases/</url>
     </repository>
 </repositories>
 
 <dependency>
-    <groupId>com.github.qTechnologiesV2</groupId>
-    <artifactId>qProtect-API</artifactId>
-    <version>1.9.4</version>
+    <groupId>dev.mdma.qprotect</groupId>
+    <artifactId>qprotect-api</artifactId>
+    <version>1.11.0</version>
+    <scope>provided</scope>
 </dependency>
 ```
 2. Create a new Class that extends ClassTransformer and implement the methods from the superClass
