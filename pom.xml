@@ -12,7 +12,7 @@
         <maven.compiler.source>8</maven.compiler.source>
         <maven.compiler.target>8</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <asm.version>9.4</asm.version>
+        <asm.version>9.7</asm.version>
     </properties>
 
     <repositories>
