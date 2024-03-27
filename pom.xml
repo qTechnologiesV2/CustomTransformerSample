@@ -30,7 +30,7 @@
         <dependency>
             <groupId>dev.mdma.qprotect</groupId>
             <artifactId>qprotect-api</artifactId>
-            <version>1.11.0</version>
+            <version>1.11.4</version>
             <scope>provided</scope>
         </dependency>
         <dependency>
@@ -43,6 +43,12 @@
             <groupId>org.ow2.asm</groupId>
             <artifactId>asm-tree</artifactId>
             <version>${asm.version}</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>1.18.28</version>
             <scope>provided</scope>
         </dependency>
     </dependencies>
